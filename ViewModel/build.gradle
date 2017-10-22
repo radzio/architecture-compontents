@@ -1,0 +1,23 @@
+//apply plugin: 'java-library'
+apply plugin: 'java'
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+publish {
+    userOrg = 'droidlabs'
+    groupId = 'net.droidlabs.android.arch'
+    artifactId = 'viewmodel'
+    publishVersion = '0.0.1'
+    desc = ''
+    website = 'https://github.com/radzio/architecture-compontents'
+}
+
+
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
