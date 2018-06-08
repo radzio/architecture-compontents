@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.arch.lifecycle;
+package androidx.lifecycle;
 
 /**
  * ViewModel is a class that is responsible for preparing and managing the data for
